@@ -1,0 +1,78 @@
+/* Contêiner geral para centralizar o formulário */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2c2c2c;
+  background-image: url('../../../../assets/images/victorianlibrary.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilos do card */
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  margin-left: -125px;
+}
+
+/* Estilos do cabeçalho do card */
+.card-header {
+  background: none;
+  border-bottom: none;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.card-header h1 {
+  color: #d4af37;
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 2rem;
+}
+
+/* Estilos dos inputs */
+input {
+  border: 2px solid #4a4a4a;
+  background-color: transparent;
+  color: #f8f8f8;
+  padding: 0.5rem 1rem;
+  margin-top: 8px;
+
+  &::placeholder {
+    color: transparent;
+  }
+}
+
+/* Estilos das labels */
+label {
+  color: #d3d3d3; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilos do botão */
+button {
+  width: 100%;
+  background-color: #4b3832;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #804d36;
+  }
+}

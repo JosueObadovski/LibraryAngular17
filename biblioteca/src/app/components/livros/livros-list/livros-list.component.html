@@ -1,0 +1,32 @@
+<div class="container my-5">
+  <h1 class="text-center text-light mb-4">Biblioteca de Livros de Terror</h1>
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr class="table-danger">
+        <th scope="col" class="col-1">#</th>
+        <th scope="col" class="col-5">Nome</th>
+        <th scope="col" class="col-4">Autor</th>
+        <th scope="col" class="col-2">
+          <button type="button" class="btn btn-success" data-mdb-ripple-init>Cadastrar</button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let livro of livros; let i = index;">
+        <th scope="row">{{ livro.id }}</th>
+        <td>{{ livro.nome }}</td>
+        <td>{{ livro.autor }}</td>
+        <td>
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-info" data-mdb-ripple-init>Alterar</button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-danger" data-mdb-ripple-init>Deletar</button>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

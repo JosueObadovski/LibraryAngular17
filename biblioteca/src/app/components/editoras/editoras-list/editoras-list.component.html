@@ -1,0 +1,30 @@
+<div class="container my-5 table-container">
+  <h1 class="text-center text-light mb-4">Biblioteca de Editoras de Terror</h1>
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr class="table-danger">
+        <th scope="col" class="col-1">#</th>
+        <th scope="col" class="col-6">Nome</th>
+        <th scope="col" class="col-2">
+          <button type="button" class="btn btn-success" data-mdb-ripple-init>Cadastrar</button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let editora of editoras; let i = index;">
+        <th scope="row">{{ editora.id }}</th>
+        <td>{{ editora.nome }}</td>
+        <td>
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-info" data-mdb-ripple-init>Alterar</button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-danger" data-mdb-ripple-init>Deletar</button>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h1>Obadovski Library</h1>
+        </div>
+        <div class="card-body">
+          <form>
+            <!-- Campo de Usuário -->
+            <div class="form-outline mb-4">
+              <input mdbInput type="text" id="username" class="form-control" [(ngModel)]="usuario" name="username" placeholder="Usuário"/>
+              <label class="form-label" for="username">Usuário</label>
+            </div>
+
+            <!-- Campo de Senha -->
+            <div class="form-outline mb-4">
+              <input mdbInput type="password" id="password" class="form-control" [(ngModel)]="senha" name="password" placeholder="Senha"/>
+              <label class="form-label" for="password">Senha</label>
+            </div>
+
+            <!-- Botão de Entrar -->
+            <button mdbBtn color="primary" mdbRipple class="btn btn-block mb-4" type="button" (click)="login()">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
